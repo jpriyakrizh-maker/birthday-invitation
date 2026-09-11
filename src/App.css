@@ -1,0 +1,230 @@
+/* Container Card */
+.card-wrapper {
+  width: 100%;
+  max-width: 500px;
+  background: #fdfbf7;
+  border-radius: 28px;
+  padding: 40px 25px 30px;
+  position: relative;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  text-align: center;
+  color: #3b5268;
+  margin: 0 auto;
+}
+
+/* Background Soft Cloud Effects */
+.card-wrapper::before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 200px;
+  height: 150px;
+  background: radial-gradient(circle, rgba(206, 226, 242, 0.5) 0%, rgba(253, 251, 247, 0) 70%);
+  pointer-events: none;
+}
+
+.card-wrapper::after {
+  content: '';
+  position: absolute;
+  bottom: -40px;
+  right: -40px;
+  width: 220px;
+  height: 180px;
+  background: radial-gradient(circle, rgba(206, 226, 242, 0.6) 0%, rgba(253, 251, 247, 0) 70%);
+  pointer-events: none;
+}
+
+/* Header Section */
+.header-container {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.crown-icon {
+  font-size: 28px;
+  color: #e5b352;
+  margin-bottom: -8px;
+}
+
+.one-title {
+  font-family: 'Comic Sans MS', 'Caveat', cursive, sans-serif;
+  font-size: 76px;
+  font-weight: 700;
+  color: #5b8db8;
+  letter-spacing: 6px;
+  line-height: 1;
+}
+
+/* Gallery Section */
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 25px;
+  position: relative;
+  z-index: 1;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 155px;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+}
+
+/* Event Details Section */
+.sub-heading {
+  font-size: 15px;
+  color: #4a637d;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+
+.main-title {
+  font-family: 'Caveat', cursive, sans-serif;
+  font-size: 44px;
+  color: #32587a;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 12px 0 18px;
+}
+
+.divider-line {
+  width: 90px;
+  height: 1.5px;
+  background-color: #a4c2db;
+}
+
+.heart-icon {
+  color: #32587a;
+  font-size: 12px;
+}
+
+.venue-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #3b5268;
+  margin-bottom: 22px;
+}
+
+/* Time & Date Block */
+.time-box-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 25px;
+  position: relative;
+  z-index: 1;
+}
+
+.time-col {
+  flex: 1;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  color: #32587a;
+}
+
+.time-col-center {
+  border-left: 1.5px solid #bdcee0;
+  border-right: 1.5px solid #bdcee0;
+  padding: 0 18px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #2b4e6d;
+}
+
+.date-text {
+  border-bottom: 2px solid #a4c2db;
+  padding-bottom: 2px;
+  display: inline-block;
+}
+
+/* Location & RSVP */
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 14px;
+  color: #3b5268;
+  position: relative;
+  z-index: 1;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* Floating Overlay Decorations */
+.teddy-img {
+  position: absolute;
+  bottom: -10px;
+  left: -15px;
+  width: 130px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.balloons-img {
+  position: absolute;
+  bottom: -10px;
+  right: -15px;
+  width: 125px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Decorative Flag Garlands */
+.garland-left {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 150px;
+  z-index: 2;
+}
+
+.garland-right {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 150px;
+  z-index: 2;
+}
+
+/* Floating Stars and Hearts */
+.floating-star {
+  position: absolute;
+  color: #e5b352;
+  font-size: 14px;
+  pointer-events: none;
+}
+
+.star-1 { top: 75px; left: 22px; }
+.star-2 { top: 110px; right: 18px; }
+.star-3 { bottom: 180px; left: 18px; }
+
+.floating-heart {
+  position: absolute;
+  color: #8bb3d6;
+  font-size: 15px;
+  pointer-events: none;
+}
+
+.heart-1 { top: 125px; left: 45px; }
+.heart-2 { bottom: 115px; left: 80px; }
